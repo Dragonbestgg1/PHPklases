@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <?php
-    echo "hi";
-    ?>
-</body>
-</html>
+<?php
+include "Car.php";
+
+echo "hi <br>";
+
+$myCar = new Car ("Dacia ");
+
+$myCar2 = new Car ("Apple car");
+echo $myCar->brand;
+echo $myCar2->brand;
+Car::makeNoise();
+
+
+?>
