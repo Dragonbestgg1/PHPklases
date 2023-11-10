@@ -1,16 +1,14 @@
 <?php
-class Car{
-    public $brand;
-    public function __construct($brand){
-        $this->brand = $brand . "<br>";
-    }
+include_once "Vehicle.php";
+class Car extends Vehicle{
 
 
     public function __destruct(){
         echo $this->brand . " is dead <br>";
     }
     static function makeNoise(){
-        echo "Beep beep <br>";
+        echo  "Beep beep <br>";
     }
 }
+
 ?>
