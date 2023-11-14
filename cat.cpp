@@ -2,18 +2,18 @@
 
 using namespace std;
 
-class Dog {
+class Cat {
     public:
         string name;
-        Dog(string n, int a){
+        Cat(string n, int a){
             name = n;
             age = a;
         }
         void birthday(){
             age++;
         }
-        void woof(){
-            cout << "Woof Woof!\n";
+        void meow(){
+            cout << "meow!\n";
         }
     private:
         int age;
@@ -21,7 +21,7 @@ class Dog {
 };
 
 int main() {
-    Dog dog1("Reksis", 6);
-    dog1.woof();
+    Cat cat1("Mincis", 2);
+    cat1.meow();
     return 0;
 }
