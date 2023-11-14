@@ -5,14 +5,14 @@ using namespace std;
 class Animal{
     protected:
         int age;
+        Animal(string n, int a){
+            name = n;
+            age = a;
+        }
     public:
         string name;
         void birthday(){
             age++;
-        }
-        Animal(string n, int a){
-            name = n;
-            age = a;
         }
 };
 
